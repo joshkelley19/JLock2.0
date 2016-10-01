@@ -1,8 +1,10 @@
 import Model.Profile;
 import Model.ProfileManager;
+import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 /**
@@ -42,4 +44,21 @@ public class ProfileManagerTests {
     public void createIDTest(){
         assertTrue(profileManager.createID()<100000000&&profileManager.createID()>9999999);
     }
+
+    @Test
+    public void signInUserNameMatchesPassword(){
+
+    }
+    @Test
+    public void signInUserNameNotExistent(){
+
+    }
+    @Test
+    public void signInUserNameExistsPasswordDoesNotMatch(){
+
+    }
+    //should create 1000 unique ids from loop
+    //set password length and specs
+    //test profile added in list
+    //
 }

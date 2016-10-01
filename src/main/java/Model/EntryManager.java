@@ -8,16 +8,17 @@ import java.util.LinkedHashMap;
  */
 public class EntryManager {
     public ArrayList<JLockEntry> entries = new ArrayList<JLockEntry>();
-    private JLockEntry selectedEntry;//todo select, edit entry
+
+    //todo select, edit entry
 
     public void createNewEntry(String site, String userName, String password, int clientNumber){
         //todo check for existing entry via website
         entries.add(new JLockEntry(site,userName,password,clientNumber));//in controller, must pass in currentProfile id number
     }
 
-    public boolean deleteEntry(){
+    public boolean deleteEntry(JLockEntry currentEntry){
         for(JLockEntry entry: entries){
-            if(entry.equals(selectedEntry)){
+            if(entry.equals(currentEntry)){
                 entries.remove(entry);
                 return true;
             }
@@ -25,28 +26,24 @@ public class EntryManager {
         return false;
     }
 
-    public void setSelectedEntry(int entryIndex){
-        selectedEntry=entries.get(entryIndex);
-    }
-
     public ArrayList getAllEntries(){
         return entries;
     }
 
-    protected void editEntry(String site,String user,String pass){
-        selectedEntry.setWebsite(site);selectedEntry.setUserName(user);selectedEntry.setPassword(pass);
+    protected void editEntry(JLockEntry currentEntry,String site,String user,String pass){
+        currentEntry.setWebsite(site);currentEntry.setUserName(user);currentEntry.setPassword(pass);
     }//todo individual field edit methods
 
-    protected String showWebsite(){
-        return selectedEntry.getWebsite();
+    protected String showWebsite(JLockEntry currentEntry){
+        return currentEntry.getWebsite();
     }
 
-    protected String showUserName(){
-        return selectedEntry.getUserName();
+    protected String showUserName(JLockEntry currentEntry){
+        return currentEntry.getUserName();
     }
 
-    protected String showPassword(){
-        return selectedEntry.getPassword();
+    protected String showPassword(JLockEntry currentEntry){
+        return currentEntry.getPassword();
     }
 
 

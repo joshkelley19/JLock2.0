@@ -1,7 +1,5 @@
 package Model;
 
-import com.sun.xml.internal.bind.v2.TODO;
-
 import java.util.HashMap;
 
 /**
@@ -9,8 +7,21 @@ import java.util.HashMap;
  */
 public class ProfileManager {
     public HashMap<String, Profile> profiles = new HashMap();
+    public Profile currentProfile;
 
+    public void signIn(String username,String password){
+        if(profiles.get(username).getPassword().equals(password)){
+            currentProfile = profiles.get(username);
+        }
+    }
 
+    public void signOut(){
+        currentProfile = null;
+    }
+
+    public boolean checkSignedIn(){
+        return currentProfile!=null;
+    }
 
     public Profile createProfile(String firstName, String lastName, String userName, String password){
         Profile newProfile = new Profile(firstName,lastName,userName,password,createID());

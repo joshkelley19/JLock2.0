@@ -37,8 +37,8 @@ public class EntryManagerTests {
     @Test
     public void deleteEntryTest(){
         entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",1);
-        entryManager.setSelectedEntry(0);
-        entryManager.deleteEntry();
+        //entryManager.setSelectedEntry(0);
+        //entryManager.deleteEntry();
         int expected = 0;
         int actual = entryManager.entries.size();
         assertEquals(expected,actual);
