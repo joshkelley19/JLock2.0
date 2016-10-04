@@ -2,6 +2,11 @@ package kelley.josh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 @SpringBootApplication
 public class Application {
@@ -9,8 +14,6 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-<<<<<<< HEAD
-
 //    @RequestMapping("/")
 //    public String homePage(){
 //        return "My App is working, kinda";
@@ -31,6 +34,4 @@ public class Application {
             }
         return htmlHomePage.toString();
     }
-=======
->>>>>>> parent of fdaad38... minor additions
 }
