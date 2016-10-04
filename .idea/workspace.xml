@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a1acc9-1e14-4c92-be6d-b892ea8a110c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/kelley/josh/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controller/Controller.class" afterPath="$PROJECT_DIR$/target/classes/Controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Model/EntryManager.class" afterPath="$PROJECT_DIR$/target/classes/Model/EntryManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Model/Password.class" afterPath="$PROJECT_DIR$/target/classes/Model/Password.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Model/ProfileManager.class" afterPath="$PROJECT_DIR$/target/classes/Model/ProfileManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/EntryManagerTests.class" afterPath="$PROJECT_DIR$/target/test-classes/EntryManagerTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ProfileManagerTests.class" afterPath="$PROJECT_DIR$/target/test-classes/ProfileManagerTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/public/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/static/index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Model/JDBC.class" afterPath="$PROJECT_DIR$/target/classes/Model/JDBC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kelley/josh/Application.class" afterPath="$PROJECT_DIR$/target/classes/kelley/josh/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JLock2.0.iml" afterPath="$PROJECT_DIR$/JLock2.0.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Model/EntryManager.java" afterPath="$PROJECT_DIR$/src/main/java/Model/EntryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Model/Password.java" afterPath="$PROJECT_DIR$/src/main/java/Model/Password.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Model/ProfileManager.java" afterPath="$PROJECT_DIR$/src/main/java/Model/ProfileManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/EntryManagerTests.java" afterPath="$PROJECT_DIR$/src/test/java/EntryManagerTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ProfileManagerTests.java" afterPath="$PROJECT_DIR$/src/test/java/ProfileManagerTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Model/JDBC.java" afterPath="$PROJECT_DIR$/src/main/java/Model/JDBC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kelley/josh/Application.java" afterPath="$PROJECT_DIR$/src/main/java/kelley/josh/Application.java" />
     </list>
     <ignored path="JLock2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,15 +49,15 @@
       <file leaf-file-name="JDBC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/JDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <marker date="1475333717000" expanded="true" signature="1035:1233" ph="INSERT INTO profiles... " />
-                <marker date="1475333717000" expanded="true" signature="1608:1630" ph="SELECT * FRO... profiles" />
-                <marker date="1475333717000" expanded="true" signature="2388:2437" ph="UPDATE profi... " />
-                <marker date="1475333717000" expanded="true" signature="2388:2482" ph="UPDATE profi... " />
-                <marker date="1475333717000" expanded="true" signature="2388:2495" ph="UPDATE profi... " />
-                <marker date="1475333717000" expanded="true" signature="2388:2497" ph="UPDATE profi... " />
+                <marker date="1475373350000" expanded="true" signature="1035:1233" ph="INSERT INTO profiles... " />
+                <marker date="1475373350000" expanded="true" signature="1608:1630" ph="SELECT * FRO... profiles" />
+                <marker date="1475373350000" expanded="true" signature="2388:2437" ph="UPDATE profi... " />
+                <marker date="1475373350000" expanded="true" signature="2388:2482" ph="UPDATE profi... " />
+                <marker date="1475373350000" expanded="true" signature="2388:2495" ph="UPDATE profi... " />
+                <marker date="1475373350000" expanded="true" signature="2388:2497" ph="UPDATE profi... " />
               </folding>
             </state>
           </provider>
@@ -91,18 +81,17 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kelley/josh/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="27" column="99" selection-start-line="27" selection-start-column="99" selection-end-line="27" selection-end-column="99" />
               <folding>
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
@@ -174,6 +163,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Model/ProfileManager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Model/JDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kelley/josh/Application.java" />
       </list>
     </option>
   </component>
@@ -289,8 +279,30 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="JLock2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JLock2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,11 +396,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SideProjectSaturdays/Zipdango/ZipDangoServer" />
-    <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/public" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Model" />
     </key>
@@ -396,7 +411,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBC">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="false" name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -977,7 +992,7 @@
       <workItem from="1474388153145" duration="6589000" />
       <workItem from="1474564582911" duration="2665000" />
       <workItem from="1474906433963" duration="396000" />
-      <workItem from="1475014176283" duration="38616000" />
+      <workItem from="1475014176283" duration="41772000" />
     </task>
     <servers />
   </component>
@@ -1014,7 +1029,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48266000" />
+    <option name="totallyTimeSpent" value="51422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1027,13 +1042,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6438356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40958905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21647818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1631664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1062,7 +1077,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1311,7 +1326,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
@@ -1358,21 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/JDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-          <folding>
-            <marker date="1475333717000" expanded="true" signature="1035:1233" ph="INSERT INTO profiles... " />
-            <marker date="1475333717000" expanded="true" signature="1608:1630" ph="SELECT * FRO... profiles" />
-            <marker date="1475333717000" expanded="true" signature="2388:2437" ph="UPDATE profi... " />
-            <marker date="1475333717000" expanded="true" signature="2388:2482" ph="UPDATE profi... " />
-            <marker date="1475333717000" expanded="true" signature="2388:2495" ph="UPDATE profi... " />
-            <marker date="1475333717000" expanded="true" signature="2388:2497" ph="UPDATE profi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ProfileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1386,13 +1386,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/JDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1475373350000" expanded="true" signature="1035:1233" ph="INSERT INTO profiles... " />
+            <marker date="1475373350000" expanded="true" signature="1608:1630" ph="SELECT * FRO... profiles" />
+            <marker date="1475373350000" expanded="true" signature="2388:2437" ph="UPDATE profi... " />
+            <marker date="1475373350000" expanded="true" signature="2388:2482" ph="UPDATE profi... " />
+            <marker date="1475373350000" expanded="true" signature="2388:2495" ph="UPDATE profi... " />
+            <marker date="1475373350000" expanded="true" signature="2388:2497" ph="UPDATE profi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kelley/josh/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="27" column="99" selection-start-line="27" selection-start-column="99" selection-end-line="27" selection-end-column="99" />
           <folding>
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

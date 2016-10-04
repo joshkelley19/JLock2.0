@@ -1,0 +1,69 @@
+/*
+light grey #C1C5BF
+lght yellow #EAFFA8
+medium red #C11707
+navy #23334E
+main yellow #EFFF10
+*/
+
+body{
+    background-color:#EFFF10;
+}
+
+#bridge{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+}
+
+.highlight{
+    background-color: #23334E;
+    color: #C1C5BF;
+    margin: 0 auto;
+    font-family: serif;
+}
+
+.highlight.sign{
+    border: 5px outset grey;
+    width: 75px;
+    left: 40%;
+    display: inline-block;
+    bottom: 100px;
+
+}
+
+.highlight.sign:active{
+    background-color: #FF1707;
+    border: 5px inset #FF1707;
+}
+
+
+#featureLabel{
+    text-align: center;
+}
+
+.feature{
+    width: 33%;
+    display: inline-block;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+form{
+    align-content: center;
+}
+
+input{
+    width: 44%;
+    height: 100px;
+    font-size: 50px;
+}
+
+.labels{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+

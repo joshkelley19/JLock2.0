@@ -62,16 +62,14 @@ public class JDBC {
         }
     }
 
-
-
-    public static void main(String[] args) {
-        JDBC jdbc = new JDBC();
-
-        //jdbc.sqlOperation(1,1,"!","1","1","1","1");
-        jdbc.add(2,"Kelley","Josh","joshemail","joshkelley19","cleancode");
-        jdbc.viewAll();
-        jdbc.update("joshkelley19","newjawn");
-        jdbc.viewAll();
-    }
+//    public static void main(String[] args) {
+//        JDBC jdbc = new JDBC();
+//
+//        //jdbc.sqlOperation(1,1,"!","1","1","1","1");
+//        jdbc.add(2,"Kelley","Josh","joshemail","joshkelley19","cleancode");
+//        jdbc.viewAll();
+//        jdbc.update("joshkelley19","newjawn");
+//        jdbc.viewAll();
+//    }
 
 }
