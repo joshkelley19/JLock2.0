@@ -42,21 +42,22 @@ public class ProfileManagerTests {
     }
     @Test
     public void createIDTest(){
-        assertTrue(profileManager.createID()<100000000&&profileManager.createID()>9999999);
+        for(int i = 0;i < 100;i++){
+            assertTrue(profileManager.createID()<100000000&&profileManager.createID()>9999999);
+        }
     }
 
     @Test
     public void signInUserNameMatchesPassword(){
-
+        boolean shouldBeTrue = profileManager.signIn("joshkelley19","MaximumEffort!");
+        assertTrue(shouldBeTrue);
     }
     @Test
-    public void signInUserNameNotExistent(){
-
+    public void signInCredentialsNotExistent(){
+        boolean shouldBeFalse = profileManager.signIn("Nothing","Doing");
+        assertFalse(shouldBeFalse);
     }
-    @Test
-    public void signInUserNameExistsPasswordDoesNotMatch(){
 
-    }
     //should create 1000 unique ids from loop
     //set password length and specs
     //test profile added in list

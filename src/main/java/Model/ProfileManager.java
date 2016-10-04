@@ -9,19 +9,21 @@ public class ProfileManager {
     public HashMap<String, Profile> profiles = new HashMap();
     public Profile currentProfile;
 
-    public void signIn(String username,String password){
+    public boolean signIn(String username,String password){
         if(profiles.get(username).getPassword().equals(password)){
             currentProfile = profiles.get(username);
+            return true;
         }
+        return false;
     }
 
     public void signOut(){
         currentProfile = null;
     }
 
-    public boolean checkSignedIn(){
-        return currentProfile!=null;
-    }
+//    public boolean checkSignedIn(){
+//        return currentProfile!=null;
+//    }
 
     public Profile createProfile(String firstName, String lastName, String userName, String password){
         Profile newProfile = new Profile(firstName,lastName,userName,password,createID());

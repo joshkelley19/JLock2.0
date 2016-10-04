@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
  * Created by joshuakelley on 9/20/16.
  */
 public class EntryManager {
-    public ArrayList<JLockEntry> entries = new ArrayList<JLockEntry>();
+    public ArrayList<JLockEntry> entries = new ArrayList<>();
 
     //todo select, edit entry
 

@@ -10,6 +10,7 @@ public class Profile {
     private String lastName;
     private String userName;
     private String password;
+    private String email;
     private final Date dateCreated;
     private final int accountNumber;
 
@@ -56,5 +57,13 @@ public class Profile {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
