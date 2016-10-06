@@ -8,12 +8,15 @@ import java.util.LinkedHashMap;
  */
 public class EntryManager {
     public ArrayList<JLockEntry> entries = new ArrayList<>();
+    private final static PasswordManager passwordManager = new PasswordManager();
 
     //todo select, edit entry
 
-    public void createNewEntry(String site, String userName, String password, int clientNumber){
+    public JLockEntry createNewEntry(String site, String userName, String password, int clientNumber){
         //todo check for existing entry via website
-        entries.add(new JLockEntry(site,userName,password,clientNumber));//in controller, must pass in currentProfile id number
+        JLockEntry createdEntry = new JLockEntry(site,userName,passwordManager.createNewPassword(password),clientNumber);//in controller, must pass in currentProfile id number
+        entries.add(createdEntry);
+        return createdEntry;
     }
 
     public boolean deleteEntry(JLockEntry currentEntry){
@@ -30,8 +33,8 @@ public class EntryManager {
         return entries;
     }
 
-    protected void editEntry(JLockEntry currentEntry,String site,String user,String pass){
-        currentEntry.setWebsite(site);currentEntry.setUserName(user);currentEntry.setPassword(pass);
+    public void updatePassword(JLockEntry currentEntry,String pass){
+        currentEntry.setPassword(passwordManager.createNewPassword(pass));
     }//todo individual field edit methods
 
     protected String showWebsite(JLockEntry currentEntry){

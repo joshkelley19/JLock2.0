@@ -7,17 +7,20 @@ import java.util.HashMap;
  */
 public class ProfileManager {
     public HashMap<String, Profile> profiles = new HashMap();
-    public Profile currentProfile;
+    private final EntryManager entryManager;
 
-    public boolean signIn(String username,String password){
-        if(profiles.get(username).getPassword().equals(password)){
-            currentProfile = profiles.get(username);
-            return true;
-        }
-        return false;
+    public ProfileManager(){
+        entryManager=new EntryManager();
     }
 
-    public void signOut(){
+    public Profile signIn(String username,String password){
+        if(profiles.get(username).getPassword().equals(password)){
+            return profiles.get(username);
+        }
+        return null;
+    }
+
+    public void signOut(Profile currentProfile){
         currentProfile = null;
     }
 
@@ -25,15 +28,14 @@ public class ProfileManager {
 //        return currentProfile!=null;
 //    }
 
-    public Profile createProfile(String firstName, String lastName, String userName, String password){
-        Profile newProfile = new Profile(firstName,lastName,userName,password,createID());
+    public Profile createProfile(String firstName, String lastName, String email, String userName, String password){
+        Profile newProfile = new Profile(firstName,lastName,email,userName,password,createID());
         return newProfile;
     }
 
-    public boolean addNewProfile(String firstName, String lastName, String userName, String password){
-        if(userNameTaken(userName))return false;
-        profiles.put(userName,createProfile(firstName,lastName,userName,password));
-        return true;
+    public Profile addNewProfile(String firstName, String lastName, String email, String userName, String password){
+        if(userNameTaken(userName))return null;
+        return profiles.put(userName,createProfile(firstName,lastName,email,userName,password));
     }
 
     public boolean userNameTaken(String userName){

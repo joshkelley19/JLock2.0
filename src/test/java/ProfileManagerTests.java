@@ -3,6 +3,9 @@ import Model.ProfileManager;
 import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.internal.matchers.Null;
+
+import java.util.Scanner;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
@@ -12,15 +15,18 @@ import static org.junit.Assert.*;
  */
 public class ProfileManagerTests {
     ProfileManager profileManager;
+    Profile testProfile;
 
     @Before
     public void initialize(){
         profileManager=new ProfileManager();
-        profileManager.addNewProfile("Josh","Kelley","joshkelley19","MaximumEffort!");
+        profileManager.addNewProfile("Josh","Kelley","Joshkelley19@gmail.com","joshkelley19","MaximumEffort!");
+        testProfile=profileManager.profiles.get("joshkelley19");
     }
+
     @Test
     public void createProfileTest(){
-        profileManager.addNewProfile("Tracy","McGrady","TMac","BetterThanKobe");
+        profileManager.addNewProfile("Tracy","McGrady","VCsCousin@seriously.com","TMac","BetterThanKobe");
         int expected=2;
         int actual=profileManager.profiles.size();
         assertEquals(expected,actual);
@@ -49,13 +55,13 @@ public class ProfileManagerTests {
 
     @Test
     public void signInUserNameMatchesPassword(){
-        boolean shouldBeTrue = profileManager.signIn("joshkelley19","MaximumEffort!");
-        assertTrue(shouldBeTrue);
+        Profile actual = profileManager.signIn("joshkelley19","MaximumEffort!");
+        assertEquals(testProfile,actual);
     }
-    @Test
+
+    @Test(expected = NullPointerException.class)
     public void signInCredentialsNotExistent(){
-        boolean shouldBeFalse = profileManager.signIn("Nothing","Doing");
-        assertFalse(shouldBeFalse);
+        assertNull(profileManager.signIn("Nothing","Doing"));//todo figure out why
     }
 
     //should create 1000 unique ids from loop

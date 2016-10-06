@@ -14,8 +14,8 @@ public class JLockEntry implements Comparable<JLockEntry>{
     private final Date dateCreated;
     private boolean isAdministratorAccount;//necessary?
 
-    public JLockEntry(String site, String user, String password, int clientNum){
-        this.website=site;this.userName=user;this.password=new Password(password);this.clientAccountNumber =clientNum;this.dateCreated=new Date();
+    public JLockEntry(String site, String user, Password password, int clientNum){
+        this.website=site;this.userName=user;this.password=password;this.clientAccountNumber =clientNum;this.dateCreated=new Date();
     }
 
     public Date getDateCreated() {
@@ -46,8 +46,8 @@ public class JLockEntry implements Comparable<JLockEntry>{
         return password.toString();
     }
 
-    public void setPassword(String password) {
-        this.password = new Password(password);
+    public void setPassword(Password password) {
+        this.password = password;
     }
 
     public String toString(){

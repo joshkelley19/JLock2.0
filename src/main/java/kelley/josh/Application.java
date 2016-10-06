@@ -18,7 +18,7 @@ public class Application {
 //    public String homePage(){
 //        return "My App is working, kinda";
 //    }
-
+    //todo passwordrandom.com api call passwordrandom.com/query?command=password&scheme=CCvvvVVNNN
     @RequestMapping("/")
     public String tester(){
         StringBuilder htmlHomePage = new StringBuilder();

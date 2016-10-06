@@ -14,8 +14,8 @@ public class Profile {
     private final Date dateCreated;
     private final int accountNumber;
 
-    public Profile(String firstName, String lastName, String userName, String password, int accountNumber){
-        this.firstName=firstName;this.lastName=lastName;this.userName = userName;
+    public Profile(String firstName, String lastName, String email, String userName, String password, int accountNumber){
+        this.firstName=firstName;this.lastName=lastName;this.email=email;this.userName = userName;
         this.password = password;this.accountNumber=accountNumber;dateCreated=new Date();
     }
 
@@ -65,5 +65,9 @@ public class Profile {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String toString(){
+        return userName +" "+accountNumber;
     }
 }
