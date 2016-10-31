@@ -35,7 +35,7 @@ public class Controller {
 
     public boolean manageEntry(int selection){
         switch (selection){
-            case 1:break;//add
+            case 1:break;//addProfile
             case 2:break;//edit
             case 3:break;//delete
         }
