@@ -13,8 +13,8 @@ public class EntryManagerTests {
     EntryManager entryManager;
     @Before
     public void initialize(){
-        testEntry=new JLockEntry("facebook.com","joshkelley19","HAMsandwich",1);
         entryManager=new EntryManager();
+        testEntry=entryManager.createNewEntry("Yahoo.com","fuddlefish","salmon",2);
     }
 
     @Test
@@ -29,32 +29,33 @@ public class EntryManagerTests {
     public void createNewEntryTest1(){
         int expected = 2;
         entryManager.createNewEntry("myspace.com","joshkelley19","HAMsandwich",1);
-        entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",1);
+        entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",2);
         int actual = entryManager.entries.size();
         assertEquals(expected,actual);
     }
 
     @Test
     public void deleteEntryTest(){
-        entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",1);
-        //entryManager.setSelectedEntry(0);
-        //entryManager.deleteEntry();
+        entryManager.deleteEntry(testEntry);
         int expected = 0;
         int actual = entryManager.entries.size();
         assertEquals(expected,actual);
     }
 
-//    @Test
-//    public void editEntryTest(){
-//
-//    }
-
     @Test
-    public void showPasswordTest(){
-        entryManager.createNewEntry("myspace.com","joshkelley19","HAMsandwich",1);
-        entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",1);
-        System.out.println(entryManager.getAllEntries());
+    public void editEntryTest(){
+        entryManager.updatePassword(testEntry,"NewPassword");
+        String expected = "NewPassword";
+        String actual = testEntry.getPassword();
+        assertEquals(expected,actual);
     }
+
+//    @Test
+//    public void showPasswordTest(){
+//        entryManager.createNewEntry("myspace.com","joshkelley19","HAMsandwich",1);
+//        entryManager.createNewEntry("youtube.com","joshkelley19","youngmoney",1);
+//        System.out.println(entryManager.getAllEntries());
+//    }
 
 
 
