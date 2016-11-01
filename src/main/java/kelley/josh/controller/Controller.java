@@ -1,4 +1,4 @@
-package Controller;
+package kelley.josh.controller;
 
 import Model.EntryManager;
 import kelley.josh.domain.JLockEntry;

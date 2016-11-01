@@ -21,19 +21,13 @@ public class User {
     private String userName;
     private String password;
     private Email email;
-    private final Date dateCreated;
 
     public User(String firstName, String lastName, Email email, String userName, String password, int accountNumber){
         this.firstName=firstName;this.lastName=lastName;this.email=email;this.userName = userName;
-        this.password = password;dateCreated=new Date();
+        this.password = password;
     }
 
     public User(){
-        dateCreated = new Date();
-    }
-
-    public Date getDateCreated() {
-        return dateCreated;
     }
 
     public String getFirstName() {
