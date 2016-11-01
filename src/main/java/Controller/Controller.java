@@ -1,8 +1,8 @@
 package Controller;
 
 import Model.EntryManager;
-import Model.JLockEntry;
-import Model.Profile;
+import kelley.josh.domain.JLockEntry;
+import kelley.josh.domain.User;
 import Model.ProfileManager;
 
 /**
@@ -12,7 +12,7 @@ public class Controller {
     EntryManager entryManager = new EntryManager();
     JLockEntry currentEntry;
     ProfileManager profileManager = new ProfileManager();
-    Profile currentProfile;
+    User currentUser;
 
     public boolean welcome(int selection){
         switch (selection){
@@ -62,8 +62,8 @@ public class Controller {
         return false;
     }
 
-    public void setCurrentProfile(Profile verifiedProfile){
-        this.currentProfile=verifiedProfile;
+    public void setCurrentUser(User verifiedUser){
+        this.currentUser = verifiedUser;
     }
 
 }

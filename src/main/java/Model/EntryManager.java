@@ -1,7 +1,8 @@
 package Model;
 
+import kelley.josh.domain.JLockEntry;
+
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 
 /**
  * Created by joshuakelley on 9/20/16.

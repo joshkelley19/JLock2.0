@@ -1,7 +1,7 @@
 import static org.junit.Assert.*;
 
 import Model.EntryManager;
-import Model.JLockEntry;
+import kelley.josh.domain.JLockEntry;
 import org.junit.Before;
 import org.junit.Test;
 

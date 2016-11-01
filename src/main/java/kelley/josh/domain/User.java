@@ -1,30 +1,39 @@
-package Model;
+package kelley.josh.domain;
 
+import org.hibernate.validator.constraints.Email;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
  * Created by joshuakelley on 9/22/16.
  */
-public class Profile {
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long accountNumber;
     private String firstName;
     private String lastName;
     private String userName;
     private String password;
-    private String email;
+    private Email email;
     private final Date dateCreated;
-    private final int accountNumber;
 
-    public Profile(String firstName, String lastName, String email, String userName, String password, int accountNumber){
+    public User(String firstName, String lastName, Email email, String userName, String password, int accountNumber){
         this.firstName=firstName;this.lastName=lastName;this.email=email;this.userName = userName;
-        this.password = password;this.accountNumber=accountNumber;dateCreated=new Date();
+        this.password = password;dateCreated=new Date();
+    }
+
+    public User(){
+        dateCreated = new Date();
     }
 
     public Date getDateCreated() {
         return dateCreated;
-    }
-
-    public int getAccountNumber() {
-        return accountNumber;
     }
 
     public String getFirstName() {
@@ -59,11 +68,11 @@ public class Profile {
         this.password = password;
     }
 
-    public String getEmail() {
+    public Email getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(Email email) {
         this.email = email;
     }
 

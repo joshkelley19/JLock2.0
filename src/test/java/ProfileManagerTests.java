@@ -1,11 +1,7 @@
-import Model.Profile;
+import kelley.josh.domain.User;
 import Model.ProfileManager;
-import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.internal.matchers.Null;
-
-import java.util.Scanner;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
@@ -15,13 +11,13 @@ import static org.junit.Assert.*;
  */
 public class ProfileManagerTests {
     ProfileManager profileManager;
-    Profile testProfile;
+    User testUser;
 
     @Before
     public void initialize(){
         profileManager=new ProfileManager();
         profileManager.addNewProfile("Josh","Kelley","Joshkelley19@gmail.com","joshkelley19","MaximumEffort!");
-        testProfile=profileManager.profiles.get("joshkelley19");
+        testUser =profileManager.profiles.get("joshkelley19");
     }
 
     @Test
@@ -55,8 +51,8 @@ public class ProfileManagerTests {
 
     @Test
     public void signInUserNameMatchesPassword(){
-        Profile actual = profileManager.signIn("joshkelley19","MaximumEffort!");
-        assertEquals(testProfile,actual);
+        User actual = profileManager.signIn("joshkelley19","MaximumEffort!");
+        assertEquals(testUser,actual);
     }
 
     @Test(expected = NullPointerException.class)
