@@ -1,5 +1,6 @@
 package kelley.josh.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -8,7 +9,8 @@ import java.util.Date;
 /**
  * Created by joshuakelley on 9/20/16.
  */
-public class JLockEntry implements Comparable<JLockEntry>{
+@Entity
+public class JLockEntry{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -75,9 +77,4 @@ public class JLockEntry implements Comparable<JLockEntry>{
         return "Website: "+website+" User Name: "+userName;
     }
 
-    @Override
-    public int compareTo(JLockEntry o) {
-        return website.compareTo(o.getWebsite());
-        //not in use, comparable implementation practice only
-    }
 }
