@@ -2,16 +2,13 @@ package kelley.josh.domain;
 
 import org.hibernate.validator.constraints.Email;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Date;
+import javax.persistence.*;
 
 /**
  * Created by joshuakelley on 9/22/16.
  */
 @Entity
+@Table(name = "Users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,9 +17,9 @@ public class User {
     private String lastName;
     private String userName;
     private String password;
-    private Email email;
+    private String email;
 
-    public User(String firstName, String lastName, Email email, String userName, String password, int accountNumber){
+    public User(String firstName, String lastName, String email, String userName, String password, int accountNumber){
         this.firstName=firstName;this.lastName=lastName;this.email=email;this.userName = userName;
         this.password = password;
     }
@@ -62,11 +59,11 @@ public class User {
         this.password = password;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Email email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 

@@ -9,6 +9,6 @@ import java.util.List;
  * Created by joshuakelley on 11/1/16.
  */
 public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findById(Long id);
+    List<User> findByAccountNumber(Long accountNumber);
 
 }

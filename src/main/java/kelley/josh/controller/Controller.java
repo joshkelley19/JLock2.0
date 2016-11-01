@@ -41,7 +41,7 @@ public class Controller {
         return jLockEntryRepository.save(jLockEntry);
     }
 
-    @RequestMapping(value = "entries", method = RequestMethod.POST)
+    @RequestMapping(value = "custom", method = RequestMethod.POST)
     public String createCustomEntry(Object[] specs){
         return PasswordManager.createCustomSpecifications(specs);
     }

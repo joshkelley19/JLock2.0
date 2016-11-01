@@ -1,16 +1,15 @@
 package kelley.josh.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * Created by joshuakelley on 9/20/16.
  */
 @Entity
+@Table(name = "JLockEntries")
 public class JLockEntry{
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
