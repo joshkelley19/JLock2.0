@@ -21,8 +21,8 @@ public class Controller {
     @Autowired
     JLockEntryRepository jLockEntryRepository;
 
-    @RequestMapping(value = "entries", method = RequestMethod.GET)
-    public List<JLockEntry> getEntries(Long id){
+    @RequestMapping(value = "entries/{id}", method = RequestMethod.GET)
+    public List<JLockEntry> getEntries(@PathVariable Long id){
         return jLockEntryRepository.findById(id);
     }
 

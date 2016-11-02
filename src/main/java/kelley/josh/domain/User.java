@@ -17,9 +17,9 @@ public class User {
     private String password;
     private String email;
 
-    public User(String firstName, String lastName, String email, String userName, String password, int accountNumber){
+    public User(String firstName, String lastName, String email, String userName, String password, Long accountNumber){
         this.firstName=firstName;this.lastName=lastName;this.email=email;this.userName = userName;
-        this.password = password;
+        this.password = password;this.accountNumber=accountNumber;
     }
 
     public User(){

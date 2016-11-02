@@ -69,8 +69,4 @@ public class PasswordManager {
             default:return 0;
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(createPasswordScheme(20));
-    }
 }
