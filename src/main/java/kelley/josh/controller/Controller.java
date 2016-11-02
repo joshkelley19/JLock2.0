@@ -16,11 +16,18 @@ import java.util.List;
  */
 @RestController("/")
 public class Controller {
+//    User currentUser;
     @Autowired
     UserRepository userRepository;
 
     @Autowired
     JLockEntryRepository jLockEntryRepository;
+
+//    @RequestMapping("signin")
+//    public User signIn(@RequestBody ){
+//        currentUser = findUser(String userName, String password);
+//        return currentUser;
+//    }
 
     @RequestMapping(value = "user/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable Long id) {
