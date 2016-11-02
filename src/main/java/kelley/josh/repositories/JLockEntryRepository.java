@@ -9,5 +9,5 @@ import java.util.List;
  * Created by joshuakelley on 11/1/16.
  */
 public interface JLockEntryRepository extends JpaRepository<JLockEntry, Long> {
-    List<JLockEntry> findById(Long id);
+    List<JLockEntry> findByClientAccountNumber(Long clientAccountNumber);
 }

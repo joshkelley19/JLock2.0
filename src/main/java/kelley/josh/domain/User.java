@@ -68,4 +68,8 @@ public class User {
     public String toString(){
         return userName +" "+accountNumber;
     }
+
+    public Long getAccountNumber() {
+        return accountNumber;
+    }
 }
