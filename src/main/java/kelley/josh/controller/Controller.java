@@ -54,6 +54,4 @@ public class Controller {
         if(response.isEmpty())return new ResponseEntity<>(response, HttpStatus.SEE_OTHER);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
-
-
 }
